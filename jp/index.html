@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON parser</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+<script defer src="./bundle.js"></script></head>
+<body>
+    <div class="top_container">
+        <h2 class="title">JSON parser</h2>
+        <div class="container_input">
+            <label for="input-data">Please insert JSON data here:</label>
+            <textarea id="input-data" name="input-data" rows="5" cols="33">[123,[2,3],4, "abd", "aadcd"]</textarea>
+            <button type="button" class="submit btn btn-info w-25">submit</button>
+            <button type="button" class="analyzer btn btn-outline-info w-25" data-toggle="collapse" data-target=".analyzer-result" disabled>analyze</button>
+                <div class="analyzer-result mt-3"></div>
+        </div>
+        <div class="container_arrow">
+            <i class="fas fa-arrow-right fa-3x h-100"></i>
+        </div>
+        <div class="container_output">
+            <div class="container_tokenizer">
+                <span class="title_tokenizer">Tokenizer</span>
+                <div class="tokenizer_viewer result"></div>
+            </div>
+            <div class="container_lexer">
+                <span class="title_lexer">Lexer</span>
+                <div class="lexer_viewer result"></div>
+            </div>
+            <div class="container_parser">
+                <span class="title_parser">Parser</span>
+                <pre class="parser_viewer result"></pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
