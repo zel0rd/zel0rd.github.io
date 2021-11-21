@@ -60,6 +60,7 @@ body {
     width: 40px;
     transform: translateY(0) rotate(315deg);
     transition-delay: 0.25s;
+    -webkit-transform: translateY(0) rotate(315deg);
 }
 
 .toggle.active span:nth-child(3) {
