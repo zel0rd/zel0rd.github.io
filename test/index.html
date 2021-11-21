@@ -8,10 +8,17 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <h1>Modern Animated Menu Toggle</h1>
     <div class="toggle">
         <span></span>
         <span></span>
         <span></span>
     </div>
+    <script>
+        let menutoggle = document.querySelector('.toggle')
+        menutoggle.onclick = () => {
+            menutoggle.classList.toggle('active')
+        }
+    </script>
 </body>
 </html>
