@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#06181f;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .icon {
+    width: 200px;
+}
+
+.container .icon path {
+    fill:transparent;
+    stroke-width: 1;
+    stroke: #31e8ff;
+} 
+
+.container .icon.heart path {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 0;
+    cursor: pointer;    
+}
+
+.container .icon.heart:hover path {
+    animation: animate-heart 2s linear forwards;
+}
+
+@keyframes animate-heart {
+    0% {            
+        stroke-dashoffset: 0;
+    }
+    /* 50% {
+        stroke-dashoffset: 200;
+        fill:transparent;
+    } */
+    100% {
+        stroke-dashoffset: 400;
+        /* fill:#31e8ff; */
+    }
+}
+
+
+.container .icon.test1 path {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 0;
+    cursor: pointer;    
+}
+
+.container .icon.test1:hover path {
+    animation: animate-heart 1s linear forwards;
+}
+
+
+
+.container .icon.test2 path {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 0;
+    cursor: pointer;    
+}
+
+.container .icon.test2:hover path {
+    animation: animate-heart .5s linear forwards;
+}
